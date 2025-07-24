@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI in Healthcare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="ai.html" class="active">AI</a></li>
+        <li><a href="wearables.html">WEARABLES</a></li>
+        <li><a href="future.html">FUTURE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Hero Banner -->
+<section class="hero" style="background: url('assets/ai-banner.png') center/cover no-repeat;">
+  <div class="hero-content">
+    <h1>AI in Healthcare</h1>
+  </div>
+</section>
+
+  <!-- Main Content -->
+ <section class="section">
+<div class="ai-topic">
+  <img src="assets/ai-diagnosis.png" alt="AI Diagnosis">
+  <div class="ai-text">
+    <h3>AI-Powered Diagnostics</h3>
+    <p>Diagnostic imaging has been revolutionized by convolutional neural networks (CNNs), with models like InceptionV3, CheXNet, and DenseNet-121 leading the charge. CheXNet, for example, is capable of detecting pneumonia from chest X-rays with performance surpassing radiologists in some tests.</p>
+    <p>Google’s deep learning models detect diabetic retinopathy from fundus images with over 90% sensitivity. DeepMind’s mammogram-reading AI significantly reduces false positives and negatives in breast cancer screening.</p>
+  </div>
+</div>
+
+<div class="ai-topic">
+  <img src="assets/clinical-ml.avif" alt="Clinical Machine Learning">
+  <div class="ai-text">
+    <h3>Clinical Machine Learning & Predictive Support</h3>
+    <p>AI-powered CDSS like Watson for Oncology and DeepMind Streams use patient vitals, EHRs, and genetic data to forecast sepsis, organ failure, and post-surgical infections.</p>
+    <p>Advanced models like XGBoost and time-series transformers help estimate readmission risk, medication efficacy, and progression of chronic illnesses like CKD or heart failure.</p>
+  </div>
+</div>
+
+<div class="ai-topic">
+  <img src="assets/nlp-healthcare.png" alt="NLP in Healthcare">
+  <div class="ai-text">
+    <h3>Natural Language Processing (NLP)</h3>
+    <p>NLP extracts key insights from doctor’s notes and pathology reports. BioBERT, ClinicalBERT, and Med-BERT outperform general models on biomedical tasks.</p>
+    <p>Chatbots like Ada and Med-PaLM assist in symptom triage and demonstrate expert-level performance on medical exams and patient communication.</p>
+  </div>
+</div>
+
+<div class="ai-topic">
+  <img src="assets/robotic-assist.png" alt="Robotic Surgery">
+  <div class="ai-text">
+    <h3>AI-Enhanced Robotic Assistance</h3>
+    <p>Robotic systems like da Vinci now integrate AI for suture planning and tissue recognition. Reinforcement learning allows surgical tools to adapt in real-time during procedures.</p>
+  </div>
+</div>
+
+<div class="ai-topic">
+  <img src="assets/ai-interpretability.png" alt="Explainability Tools">
+  <div class="ai-text">
+    <h3>AI Interpretability & Clinical Trust</h3>
+    <p>Tools like LIME (Local Interpretable Model-agnostic Explanations) and SHAP (SHapley Additive exPlanations) help explain AI decisions to clinicians by highlighting what influenced diagnoses. This builds trust and encourages safer deployment in clinical settings.</p>
+    
+  </div>
+</div>
+</section>
+
+<!-- AI Model Comparison Table -->
+<section class="section">
+  <h2>Comparison of Leading AI Models in Healthcare</h2>
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Model Name</th>
+        <th>Application Area</th>
+        <th>Notable Strength</th>
+        <th>Used By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>InceptionV3</td>
+        <td>Medical Imaging (X-rays, CT)</td>
+        <td>Accurate feature detection in radiology</td>
+        <td>Google Health</td>
+      </tr>
+      <tr>
+        <td>CheXNet</td>
+        <td>Pneumonia Detection</td>
+        <td>Outperforms radiologists in detection</td>
+        <td>Stanford ML Group</td>
+      </tr>
+      <tr>
+        <td>BioBERT</td>
+        <td>NLP on biomedical texts</td>
+        <td>Named entity recognition, relation extraction</td>
+        <td>Korea University</td>
+      </tr>
+      <tr>
+        <td>Med-PaLM</td>
+        <td>Medical Q&A</td>
+        <td>Performs at expert level on USMLE</td>
+        <td>Google DeepMind</td>
+      </tr>
+      <tr>
+        <td>ClinicalBERT</td>
+        <td>EHR Notes Analysis</td>
+        <td>Sentiment analysis and risk stratification</td>
+        <td>MIT</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- AI System Architecture Flowchart -->
+<section class="section">
+  <h2>AI System Architecture in Healthcare</h2>
+  <div class="flowchart">
+    <div class="flow-box">Raw Healthcare Data</div>
+    <div class="flow-arrow">&#8595;</div>
+    <div class="flow-box">Data Preprocessing</div>
+    <div class="flow-arrow">&#8595;</div>
+    <div class="flow-box">Model Selection (CNN, RNN, Transformers)</div>
+    <div class="flow-arrow">&#8595;</div>
+    <div class="flow-box">Training & Validation</div>
+    <div class="flow-arrow">&#8595;</div>
+    <div class="flow-box">Clinical Deployment</div>
+    <div class="flow-arrow">&#8595;</div>
+    <div class="flow-box">Diagnosis / Decision Support</div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <ul class="footer-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="ai.html">AI</a></li>
+      <li><a href="wearables.html">WEARABLES</a></li>
+      <li><a href="future.html">FUTURE</a></li>
+    </ul>
+    <p>Created by Mitali Nivangune | Content: DeepMind, Google Health, NIH | Images: Unsplash, Wikimedia | © 2025</p>
+  </footer>
+
+</body>
+</html>

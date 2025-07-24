@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>From Stethoscopes to Smartwatches</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="ai.html">AI</a></li>
+        <li><a href="wearables.html">WEARABLES</a></li>
+        <li><a href="future.html">FUTURE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h4>FROM STETHOSCOPE TO SMARTWATCHES</h4>
+
+      <h1><b> HEALTHCARE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EVOLUTION</b></h1>
+      <h4>A VISUAL JOURNEY THROUGH MEDICAL INNOVATION</h4> 
+    </div>
+  </section>
+
+  <section id="intro" class="section">
+    <h2>Introduction</h2>
+    <p>
+      The journey of healthcare innovation spans centuries—from analog instruments to digital intelligence. Each leap in technology has reshaped how we understand the human body, diagnose illness, and deliver care.
+    </p>
+    <p>
+      As technology and medicine converge, we are entering an era where personalized, predictive, and preventive care is becoming a reality.
+    </p>
+  </section>
+
+  <section id="timeline" class="section">
+    <h2>Timeline of Medical Technology</h2>
+    <div class="card-container">
+      <div class="card left">
+        <img src="assets/stethoscope.avif" alt="Stethoscope">
+        <h3>1816 – Stethoscope</h3>
+        <p>René Laennec invents the stethoscope, enabling doctors to listen to internal sounds of the body.</p>
+      </div>
+      <div class="card right">
+        <img src="assets/xray.avif" alt="X-ray">
+        <h3>1895 – X-ray Imaging</h3>
+        <p>Wilhelm Röntgen discovers X-rays, allowing non-invasive internal imaging.</p>
+      </div>
+      <div class="card left">
+        <img src="assets/mri.avif" alt="MRI Machine">
+        <h3>1977 – MRI Scanner</h3>
+        <p>Magnetic Resonance Imaging offers detailed scans of tissues and organs without surgery.</p>
+      </div>
+      <div class="card right">
+        <img src="assets/robotic-surgery.webp" alt="Robotic Surgery">
+        <h3>2000 – Robotic-Assisted Surgery</h3>
+        <p>The da Vinci Surgical System introduces robotics to minimally invasive surgery.</p>
+      </div>
+      <div class="card left">
+        <img src="assets/smartwatch.avif" alt="Smartwatch">
+        <h3>2014 – Smartwatches</h3>
+        <p>Wearable devices like Apple Watch monitor heart rate, ECG, sleep, and more.</p>
+      </div>
+      <div class="card right">
+        <img src="assets/ai-health-assistant.webp" alt="AI Health Assistant">
+        <h3>2025 – AI Health Assistants</h3>
+        <p>AI-powered apps integrate wearables and medical data to provide real-time diagnostics and lifestyle guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <ul class="footer-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="ai.html">AI</a></li>
+      <li><a href="wearables.html">WEARABLES</a></li>
+      <li><a href="future.html">FUTURE</a></li>
+    </ul>
+    <p>Created by Mitali Nivangune | Content: WHO, NIH, DeepMind, Google Health | Images: Unsplash, Wikimedia | © 2025</p>
+  </footer>
+
+  <a href="#" class="back-to-top">&#8679;</a>
+
+  <script>
+    const cards = document.querySelectorAll(".card");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.3 });
+
+    cards.forEach(card => observer.observe(card));
+
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('show', window.scrollY > 400);
+    });
+  </script>
+
+</body>
+</html>
